@@ -10,6 +10,8 @@ else{
 <i></i>
 <?php
 echo("&nbsp;<DIV>".$_SESSION["user"]["email"]."</DIV>&nbsp;");
-echo("<a class='usergomb' href='index.php?logout=1'>Kilépés</a>");
+echo("<form action='index.php?logout=1' method='post'>
+    <input type='submit' class='form_field' value='Kilépés'>
+    </form>");
 }
 ?>
