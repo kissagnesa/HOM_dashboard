@@ -40,6 +40,7 @@ include("connect.php");
     </div>
     <div>
         <?php
+        include("modules/login.php");
         include("modules/admin_interface.php");
         ?>
     </div>

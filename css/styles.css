@@ -3,6 +3,7 @@ body{
     margin:0px;
     font-family: Arial, Helvetica, sans-serif;
     background: lavender;
+    color:#212529;
 }
 
 a{
@@ -11,10 +12,18 @@ a{
 }
 
 .banner{
-    background:#a4189d;
+    background:purple;
 	min-height:25px;
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
     color:white
+}
+
+.form_field{
+    width: 80%;
+	padding:8px;
+	border:1px solid #CCCCCC;
+	margin-top:10px;
+	border-radius:5px;
 }
