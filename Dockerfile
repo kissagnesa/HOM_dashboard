@@ -1,4 +1,6 @@
-FROM docker/whalesay:latest
-LABEL Name=homdashboard Version=0.0.1
-RUN apt-get -y update && apt-get install -y fortunes
-CMD ["sh", "-c", "/usr/games/fortune -a | cowsay"]
+FROM php:8.2-apache
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+COPY . /var/www/html/
+USER www-data
+EXPOSE 80
+CMD ["apache2-foreground"]
