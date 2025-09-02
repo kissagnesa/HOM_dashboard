@@ -1,0 +1,6 @@
+services:
+  homdashboard:
+    image: homdashboard
+    build:
+      context: .
+      dockerfile: ./Dockerfile
