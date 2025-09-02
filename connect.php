@@ -1,7 +1,7 @@
 <?php
 
-$kapcs = new mysqli("localhost","root","","houseofmysteries"); 
+$connect = new mysqli("localhost","root","","houseofmysteries"); 
 
-$kapcs->query("set names utf8");
+$connect->query("set names utf8");
 
 ?>
