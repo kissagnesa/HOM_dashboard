@@ -11,11 +11,11 @@ $stmt->bind_param("ss", $_POST["email"], $password);
 
 $stmt->execute();
 
-$back=$stmt->get_result();
+$result=$stmt->get_result();
 
-if(mysqli_num_rows($back)==1)
+if(mysqli_num_rows($result)==1)
 {
-    $line=mysqli_fetch_assoc($back);
+    $line=mysqli_fetch_assoc($result);
     $_SESSION["user"]=$line;
     header("Location:../index.php");
 }

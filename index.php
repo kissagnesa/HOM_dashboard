@@ -45,5 +45,10 @@ include("connect.php");
         ?>
     </div>
     </div>
+    <div>
+        <?php
+        include("modules/booking.php");
+        ?>
+    </div>
   </body>
 </html>
