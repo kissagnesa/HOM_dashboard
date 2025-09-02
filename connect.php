@@ -6,9 +6,9 @@ $password = "";
 $dbname = "houseofmysteries";
 
 try {
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    if ($conn->connect_error) {
-        throw new Exception("Connection failed: " . $conn->connect_error);
+    $connect = new mysqli($servername, $username, $password, $dbname);
+    if ($connect->connect_error) {
+        throw new Exception("Connection failed: " . $connect->connect_error);
     }
 } catch (Exception $e) {
     die("Error: " . $e->getMessage());
