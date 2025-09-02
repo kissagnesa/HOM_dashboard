@@ -1,7 +1,17 @@
 <?php
 
-$connect = new mysqli("localhost","root","","houseofmysteries"); 
+$servername = "host.docker.internal";
+$username = "root";
+$password = "";
+$dbname = "houseofmysteries";
 
-$connect->query("set names utf8");
+try {
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        throw new Exception("Connection failed: " . $conn->connect_error);
+    }
+} catch (Exception $e) {
+    die("Error: " . $e->getMessage());
+}
 
 ?>
