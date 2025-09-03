@@ -51,3 +51,14 @@ table td{
     padding:10px;
 	border:1px solid #CCCCCC;
 }
+
+.errorbox{
+	padding:8px;
+	color:red;
+	font-size: large;
+	background: white;
+	min-height:25px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}

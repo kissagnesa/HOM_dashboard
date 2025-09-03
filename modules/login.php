@@ -2,7 +2,7 @@
     <?php
     if(isset($_GET["login"]))
     {
-        echo("<div>Sikertelen belépés!</div>");
+        echo("<div class='errorbox'>Sikertelen belépés!</div>");
     }
     ?>
     <form action="modules/login_check.php" method="post">

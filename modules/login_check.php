@@ -16,8 +16,14 @@ $result=$stmt->get_result();
 if(mysqli_num_rows($result)==1)
 {
     $line=mysqli_fetch_assoc($result);
-    $_SESSION["user"]=$line;
-    header("Location:../index.php");
+    if($line["role_id"]==3 || $line["role_id"]==4)
+    {
+            $_SESSION["user"]=$line;
+            header("Location:../index.php");
+    }
+    else{
+        header("Location:../index.php?action=login.php&login=permission_error");
+    }
 }
 else header("Location:../index.php?action=login.php&login=error");
 ?>
