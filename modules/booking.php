@@ -3,6 +3,11 @@ if (isset($_SESSION["user"])) {
 
     $result = $connect->query("select * from booking");
 
+?>
+    <a href="modules/booking_export.php">
+    <button class="userbutton">Exportálás CSV-be</button>
+    </a>
+<?php
     if ($result && $result->num_rows > 0) {
         echo "<table>";
         echo "<tr>";
@@ -32,6 +37,5 @@ if (isset($_SESSION["user"])) {
         echo "Nincsenek foglalások az adatbázisban.";
     }
 
-    $connect->close();
 }
 ?>

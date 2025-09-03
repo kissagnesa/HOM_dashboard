@@ -44,7 +44,7 @@ include("connect.php");
         include("modules/admin_interface.php");
         ?>
     </div>
-    </div>
+    </div>   
     <div>
         <?php
         include("modules/booking.php");
