@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Sze 02. 16:25
+-- Létrehozás ideje: 2025. Sze 03. 13:17
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
@@ -276,12 +276,11 @@ INSERT INTO `users` (`user_id`, `name`, `nick_name`, `email`, `phone`, `team_id`
 (43, 'Takács Péter', 'peter_t', 'peter.takacs@example.com', '123456789054', 43, 2, 'e10adc3949ba59abbe56e057f20f883e'),
 (44, 'Kis Ilona', 'ilona_k', 'ilona.kis@example.com', '123456789055', 44, 3, 'e10adc3949ba59abbe56e057f20f883e'),
 (45, 'Varga Tamás', 'tamas_v', 'tamas.varga@example.com', '123456789056', 45, 2, 'e10adc3949ba59abbe56e057f20f883e'),
-(46, 'Sipos Krisztina', 'krisztina_s', 'krisztina.sipos@example.com', '123456789057', 46, 4, 'e10adc3949ba59abbe56e057f20f883e'),
+(46, 'Sipos Krisztina', 'krisztina_s', 'krisztina.sipos@example.com', '123456789057', 46, 4, '39574f5000a43a7439a75ea1441be80c'),
 (47, 'Pál Gergely', 'gergely_p', 'gergely.pal@example.com', '123456789058', 47, 2, 'e10adc3949ba59abbe56e057f20f883e'),
 (48, 'Katona Anna', 'anna_ka', 'anna.katona@example.com', '123456789059', 48, 3, 'e10adc3949ba59abbe56e057f20f883e'),
 (49, 'Kerekes Lajos', 'lajos_k', 'lajos.kerekes@example.com', '123456789060', 49, 2, 'e10adc3949ba59abbe56e057f20f883e'),
-(50, 'Farkas Éva', 'eva_f', 'eva.farkas@example.com', '123456789061', 50, 3, 'e10adc3949ba59abbe56e057f20f883e'),
-(51, 'BKA', 'agica', 'sindzse88@gmail.com', '36706044782', 1, 3, '39574f5000a43a7439a75ea1441be80c');
+(50, 'Farkas Éva', 'eva_f', 'eva.farkas@example.com', '123456789061', 50, 3, 'e10adc3949ba59abbe56e057f20f883e');
 
 --
 -- Indexek a kiírt táblákhoz
@@ -357,7 +356,7 @@ ALTER TABLE `teams`
 -- AUTO_INCREMENT a táblához `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- Megkötések a kiírt táblákhoz

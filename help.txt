@@ -1,0 +1,4 @@
+Kedves Te, Ti, aki megnézed ezt a kis projektet. :)
+A felület egy gyakorló weboldal, hasonlót készítettem élesben a jelenlegi munkahelyemen.
+A teszteléshez az alábbi email-pw párost tudjátok használni.
+collegue és admin role: krisztina.sipos@example.com, kismacska
